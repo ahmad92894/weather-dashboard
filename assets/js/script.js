@@ -44,9 +44,9 @@ function searchResult() {
         })
         .then(function (data) {
 
-            console.log(data);
+            
 
-            weatherIconMain();
+           
     
             document.getElementById('s-c').innerHTML = (data.city.name + ' (' + (dayjs().format('MM/DD/YYYY')) + ')');
           
