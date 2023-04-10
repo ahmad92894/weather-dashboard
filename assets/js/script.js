@@ -9,7 +9,7 @@ if (SH === null) {
 }
 displaySH();
 
-function addToHistory(search) {
+function aTH(search) {
     SH.push(search);
   
     localStorage.setItem('search-history', JSON.stringify(SH));
@@ -31,12 +31,12 @@ function displaySH() {
         }
 }
 
-function searchResult() {
+function sR() {
     console.log(iG.value)
     cN = iG.value;
     var endUrl = ('https://api.openweathermap.org/data/2.5/forecast?q=' + cN + '&units=imperial&appid=a25a3219d52441f3c1980a1fba414db9');
 
-    addToHistory(cN);
+    aTH(cN);
 
     fetch(endUrl)
         .then(function (response) {
@@ -84,4 +84,4 @@ function searchResult() {
 
 
 
-bG.addEventListener('click', searchResult);
+bG.addEventListener('click', sR);
