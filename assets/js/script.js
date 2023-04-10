@@ -44,80 +44,7 @@ function searchResult() {
         })
         .then(function (data) {
 
-            function weatherIconMain() {
-
-                if ((data.list[0].weather[0].main) === 'Clouds') {
-                    document.getElementById('c-i').innerHTML = ('&#9729;' + (data.list[0].weather[0].main));
-                } else if ((data.list[0].weather[0].main) === 'Clear') {
-                    document.getElementById('c-i').innerHTML = ('&#9728;' + (data.list[0].weather[0].main));
-                } else if ((data.list[0].weather[0].main) === 'Snow') {
-                    document.getElementById('c-i').innerHTML = ('&#9731;' + (data.list[0].weather[0].main));
-                } else if ((data.list[0].weather[0].main) === 'Rain') {
-                    document.getElementById('c-i').innerHTML = ('&#9730;' + (data.list[0].weather[0].main));
-                } else {
-                    document.getElementById('c-i').innerHTML = ('&#9749;' + (data.list[0].weather[0].main));
-                }
-
-                if ((data.list[8].weather[0].main) === 'Clouds') {
-                    document.getElementById('d1-i').innerHTML = ('&#9729;' + (data.list[8].weather[0].main));
-                } else if ((data.list[8].weather[0].main) === 'Clear') {
-                    document.getElementById('d1-i').innerHTML = ('&#9728;' + (data.list[8].weather[0].main));
-                } else if ((data.list[8].weather[0].main) === 'Snow') {
-                    document.getElementById('d1-i').innerHTML = ('&#9731;' + (data.list[8].weather[0].main));
-                } else if ((data.list[8].weather[0].main) === 'Rain') {
-                    document.getElementById('d1-i').innerHTML = ('&#9730;' + (data.list[8].weather[0].main));
-                } else {
-                    document.getElementById('d1-i').innerHTML = ('&#9749;' + (data.list[8].weather[0].main));
-                }
-
-                if ((data.list[16].weather[0].main) === 'Clouds') {
-                    document.getElementById('d2-i').innerHTML = ('&#9729;' + (data.list[16].weather[0].main));
-                } else if ((data.list[16].weather[0].main) === 'Clear') {
-                    document.getElementById('d2-i').innerHTML = ('&#9728;' + (data.list[16].weather[0].main));
-                } else if ((data.list[16].weather[0].main) === 'Snow') {
-                    document.getElementById('d2-i').innerHTML = ('&#9731;' + (data.list[16].weather[0].main));
-                } else if ((data.list[16].weather[0].main) === 'Rain') {
-                    document.getElementById('d2-i').innerHTML = ('&#9730;' + (data.list[16].weather[0].main));
-                } else {
-                    document.getElementById('d2-i').innerHTML = ('&#9749;' + (data.list[16].weather[0].main));
-                }
-
-                if ((data.list[24].weather[0].main) === 'Clouds') {
-                    document.getElementById('d3-i').innerHTML = ('&#9729;' + (data.list[24].weather[0].main));
-                } else if ((data.list[24].weather[0].main) === 'Clear') {
-                    document.getElementById('d3-i').innerHTML = ('&#9728;' + (data.list[24].weather[0].main));
-                } else if ((data.list[24].weather[0].main) === 'Snow') {
-                    document.getElementById('d3-i').innerHTML = ('&#9731;' + (data.list[24].weather[0].main));
-                } else if ((data.list[24].weather[0].main) === 'Rain') {
-                    document.getElementById('d3-i').innerHTML = ('&#9730;' + (data.list[24].weather[0].main));
-                } else {
-                    document.getElementById('d3-i').innerHTML = ('&#9749;' + (data.list[24].weather[0].main));
-                }
-
-                if ((data.list[32].weather[0].main) === 'Clouds') {
-                    document.getElementById('d4-i').innerHTML = ('&#9729;' + (data.list[32].weather[0].main));
-                } else if ((data.list[32].weather[0].main) === 'Clear') {
-                    document.getElementById('d4-i').innerHTML = ('&#9728;' + (data.list[32].weather[0].main));
-                } else if ((data.list[32].weather[0].main) === 'Snow') {
-                    document.getElementById('d4-i').innerHTML = ('&#9731;' + (data.list[32].weather[0].main));
-                } else if ((data.list[32].weather[0].main) === 'Rain') {
-                    document.getElementById('d4-i').innerHTML = ('&#9730;' + (data.list[32].weather[0].main));
-                } else {
-                    document.getElementById('d4-i').innerHTML = ('&#9749;' + (data.list[32].weather[0].main));
-                }
-
-                if ((data.list[39].weather[0].main) === 'Clouds') {
-                    document.getElementById('d5-i').innerHTML = ('&#9729;' + (data.list[39].weather[0].main));
-                } else if ((data.list[39].weather[0].main) === 'Clear') {
-                    document.getElementById('d5-i').innerHTML = ('&#9728;' + (data.list[39].weather[0].main));
-                } else if ((data.list[39].weather[0].main) === 'Snow') {
-                    document.getElementById('d5-i').innerHTML = ('&#9731;' + (data.list[39].weather[0].main));
-                } else if ((data.list[39].weather[0].main) === 'Rain') {
-                    document.getElementById('d5-i').innerHTML = ('&#9730;' + (data.list[39].weather[0].main));
-                } else {
-                    document.getElementById('d5-i').innerHTML = ('&#9749;' + (data.list[39].weather[0].main));
-                }
-            }
+            console.log(data);
 
             weatherIconMain();
     
@@ -153,6 +80,7 @@ function searchResult() {
             document.getElementById('d5-h').innerHTML = ('Humidity: ' + (data.list[39].main.humidity) + ' %');
         });
 }
+
 
 
 
